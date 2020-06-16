@@ -1,13 +1,35 @@
 body {
-    background: #fefefe;
+    background: #aaa;
 }
 
 h1 {
     color: red;
 }
-h2 {
-    color: #1460aa;
+.menu {
+    background: royalblue;
+    display: block;
+    margin-bottom: 10px;
 }
-.moja-klasa {
-    color: rosybrown;
+.menu__link {
+    color: yellow;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.menu__link--active {
+    background: red;
+}
+.section {
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+}
+.section__item {
+    color: blueviolet;
+}
+.section__item--title {
+    color: brown;
+}
+.section__item--little-title {
+    color: tomato;
 }
