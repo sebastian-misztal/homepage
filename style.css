@@ -1,35 +1,45 @@
 body {
-    background: #aaa;
+  background: #aaa;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    140deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(107, 9, 121, 1) 35%,
+    rgba(89, 53, 189, 1) 65%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 h1 {
-    color: red;
+  color: red;
 }
 .menu {
-    background: royalblue;
-    display: block;
-    margin-bottom: 10px;
+  background: royalblue;
+  margin-bottom: 10px;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
 }
 .menu__link {
-    color: yellow;
-    display: inline-block;
-    padding: 5px 10px;
+  color: yellow;
+  display: inline-block;
+  padding: 5px 10px;
 }
 .menu__link--active {
-    background: red;
+  background: red;
 }
 .section {
-    border: 1px solid #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 500px;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
 }
 .section__item {
-    color: blueviolet;
+  color: blueviolet;
 }
 .section__item--title {
-    color: brown;
+  color: brown;
 }
 .section__item--little-title {
-    color: tomato;
+  color: tomato;
 }
