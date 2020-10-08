@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="hamburger hamburger--js" aria-label="Otwórz menu">Menu</button>
+        <nav class="menu menu--js">
+            <a href="index.html" class="menu__link">Index</a>
+            <a href="inna-strona.html" class="menu__link">Inna strona</a>
+            <a href="grid.html" class="menu__link">Grid</a>
+            <a href="form.html" class="menu__link menu__link--active">Formularz</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>Formularz</h1>
+        <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
+            <!-- enctype="multipart/form-data" -->
+            <fieldset>
+                <legend>Podaj swoje dane</legend>
+                <p>
+                    <label for="firstName">Imię:</label>
+                    <input class="form__input" type="text" value="John" id="firstName" name="firstName">
+                </p>
+                <p>
+                    <label>Nazwisko:
+                    <input class="form__input" type="text" required pattern="[a-zA-Z]+" placeholder="Podaj nazwisko" id="lastName" name="lastName">
+                    </label>
+                </p>
+                <p>
+                    <label>Numer:
+                    <input class="form__input" type="number" placeholder="Podaj numer" id="number" name="number">
+                    </label>
+                </p>
+                <p>
+                    <label>Numer telefonu:
+                    <input class="form__input" type="tel" placeholder="Podaj telefon" id="phoneNumber" name="phoneNumber">
+                    </label>
+                </p>
+                <p>
+                    <label>Adres email:
+                    <input class="form__input" type="email" required placeholder="Podaj e-mail" id="email" name="email">
+                    </label>
+                </p>
+                <p>
+                    <label>Zakres:
+                    <input class="form__input" type="range" min="0" max="100" step="10" id="range" name="range">
+                    </label>
+                </p>
+                <p>
+                    <label>Hasło:
+                    <input class="form__input" type="password" placeholder="Podaj hasło" id="password" name="password">
+                    </label>
+                </p>
+                <p>
+                    <label>Plik:
+                    <input class="form__input" type="file" id="file" name="file">
+                    </label>
+                </p>
+                <p>
+                    <label for="selekt">Wybierz mądrze:</label>
+                    <select class="form__label" id="selekt" name="selekt">
+                        <option value="1">jeden</option>
+                        <option value="2">dwa</option>
+                        <option value="3">trzy</option>
+                        <option value="4">cztery</option>
+                        <option value="5">pięć</option>
+                    </select>
+                </p>
+                <p>
+                    <label class="form__label" for="story">Opis:</label>
+                    <textarea class="form__textarea" id="story" name="story">Opowieść...</textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>
+                    <input name="newsletter" checked type="radio" value="weekly">Tygodniowy
+                </p>
+                <p>
+                    <input name="newsletter" type="radio" value="monthly">Miesięczny
+                </p>
+            </fieldset>
+            <p>
+                <label><input name="agreement" checked type="checkbox" value="agree">Zgadzam się</label>
+            </p>
+            <p>
+                <input name="submit" type="submit" value="Wyślij">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        stópka
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
